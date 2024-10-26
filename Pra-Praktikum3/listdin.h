@@ -46,7 +46,7 @@ typedef struct
 /* Konstruktor : create list kosong  */
 void CreateListDin(ListDin *l, int capacity);
 /* I.S. l sembarang, capacity > 0 */
-/* F.S. Terbentuk list dinamis l kosong dengan kapasitas capacity */
+/* F.S. Terbentuk list dinamis l kFosong dengan kapasitas capacity */
 
 void dealocateList(ListDin *l);
 /* I.S. l terdefinisi; */
