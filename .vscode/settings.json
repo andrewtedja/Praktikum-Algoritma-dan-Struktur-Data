@@ -59,6 +59,8 @@
   "files.associations": {
     "functional": "c",
     "iterator": "c",
-    "math.h": "c"
+    "math.h": "c",
+    "mesinkata.h": "c",
+    "ipv4lay": "cpp"
   }
 }
