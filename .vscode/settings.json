@@ -61,6 +61,7 @@
     "iterator": "c",
     "math.h": "c",
     "mesinkata.h": "c",
-    "ipv4lay": "cpp"
+    "ipv4lay": "cpp",
+    "stdio.h": "c"
   }
 }

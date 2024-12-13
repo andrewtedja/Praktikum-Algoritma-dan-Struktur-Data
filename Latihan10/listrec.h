@@ -81,28 +81,35 @@ List deleteLast(List l);
 /* Fungsi untuk menghapus elemen terakhir sebuah list l */
 
 /*** Operasi-Operasi Lain ***/
-List inverseList (List l);
-/* Mengirimkan list baru, hasil invers dari l dengan menyalin semua elemen list.
+List reverseList (List l);
+/* Mengirimkan list baru, list l yang dibalik dengan menyalin semua elemen list.
 Semua elemen list baru harus dialokasi */
 /* Jika alokasi gagal, hasilnya list kosong */
 
-void splitPosNeg (List l, List *l1, List *l2);
+void splitOddEven (List l, List *l1, List *l2);
 /* I.S. l mungkin kosong */
 /* F.S. Berdasarkan l, dibentuk dua buah list l1 dan l2 */ 
-/* l1 berisi semua elemen l yang positif atau 0, sedangkan l2 berisi
-semua elemen l yang negatif; semua dengan urutan yang sama seperti di l */
+/* l1 berisi semua elemen l yang genap, sedangkan l2 berisi
+semua elemen l yang ganjil; semua dengan urutan yang sama seperti di l */
 /* l tidak berubah: Semua elemen l1 dan l2 harus dialokasi */
 /* Jika l kosong, maka l1 dan l2 kosong */
 
 void splitOnX (List l, ElType x, List *l1, List *l2);
 /* I.S. l dan x terdefinisi, l1 dan l2 sembarang. */
-/* F.S. l1 berisi semua elemen l yang lebih kecil dari x, dengan urutan
-kemunculan yang sama, l2 berisi semua elemen l yang tidak masuk ke
-l1, dengan urutan kemunculan yang sama. */
+/* F.S. l1 berisi semua elemen l yang sebelum indeks ke-x 
+      l2 berisi semua elemen l setelah indeks ke-x (termasuk indeks ke-x)
+*/
 
-List removeDuplicate(List l, List unique);
-/* l dan unique terdefinisi, l sembarang dan unique digunakan sebagai tempat menyimpan elemen unik */
-/* Mengembalikan list yang berisi elemen unik */
-/* Urutan masuk ke dalam list unique menggunakan konso */
+ElType getMiddle(List l);
+/* I.S. l terdefinisi, bukan list kosong */
+/* F.S. Mengembalikan elemen tengah dari List l */
+/* Jika jumlah elemen dalam List l ganjil, elemen tengah adalah elemen yang berada di posisi tengah.
+   Jika jumlah elemen dalam List l genap, elemen tengah adalah elemen di posisi tengah kedua. */
+/* Contoh:
+   l = [1, 2, 3, 4, 5]
+   elemen tengah = 3
+
+   l = [1, 6, 3, 10]
+   elemen tengah = 3 (6 dan 3 berada di tengah, dikembalikan elemen tengah kedua, yaitu 3) */
 
 #endif
