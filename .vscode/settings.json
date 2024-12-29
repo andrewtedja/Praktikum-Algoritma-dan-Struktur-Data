@@ -62,6 +62,8 @@
     "math.h": "c",
     "mesinkata.h": "c",
     "ipv4lay": "cpp",
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "random": "c",
+    "limits": "c"
   }
 }
