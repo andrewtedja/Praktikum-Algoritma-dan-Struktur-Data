@@ -152,3 +152,4 @@ void printPathToElement(BinTree p, ElType target) {
     }
     printf("\n");
 }
+

